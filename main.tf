@@ -6,7 +6,7 @@ provider "google" {
 resource "google_compute_instance" "default" {
   name         = "web-server"
   machine_type = "e2-medium"
-  zone         = "us-central1-c"
+  location_id="nam5"
 
   boot_disk {
     initialize_params {
